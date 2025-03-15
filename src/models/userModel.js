@@ -57,11 +57,11 @@ userSchema.methods.getJwtToken = function(){
   })
 }
 
-// userSchema.methods.isValidPassword = async function(enterPassword){
+userSchema.methods.isValidPassword = async function(enterPassword){
  
-//        return await  bcrypt.compare(enterPassword, this.password)
+       return await  bcrypt.compare(enterPassword, this.password)
  
-// }
+}
 
 // userSchema.methods.getResetPassword = () =>{
 //     //geerate tokenn
